@@ -1,0 +1,90 @@
+﻿.head {
+    background: url('../Images/gallery_head.png') no-repeat center;
+    width: 1100px;
+    height: 228px;
+    position: relative;
+}
+
+    .head a {
+        position: absolute;
+        right: 55px;
+        width: 140px;
+        height: 40px;
+        /*border: solid 1px red;*/
+    }
+
+.galleryBG {
+    background-position: 10px bottom;
+    width: 1000px;
+    height: 622px;
+    background-color: #b9dafd;
+    background-image: url('../Images/kfar_logo.png');
+    background-repeat: no-repeat;
+    direction: ltr;
+}
+
+.imageContainer {
+    position: absolute;
+    width: 500px;
+    height: 732px;
+    border: solid 1px #034da2;
+    display: none;
+}
+
+.toolBtn {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.FB {
+    background: url('../Images/toolbar_sprite.png') no-repeat;
+}
+
+.mail {
+    background: url('../Images/toolbar_sprite.png') no-repeat -45px 0;
+}
+
+.imageData {
+    float: right;
+}
+
+.displayGalleryHead {
+    display: none;
+}
+
+.sendMailDialog {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #034ea2;
+    border: solid 1px white;
+    padding: 5px;
+    display: none;
+}
+
+.closeMail {
+    background: url('../Images/toolbar_sprite.png') no-repeat -112px -60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sendMailStatus {
+    color: white;    
+    margin-top: 10px;
+}
+
+.owl-dots {
+    display: inline-block;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.imageWrapper {
+    height: 140px;
+}

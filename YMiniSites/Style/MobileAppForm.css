@@ -1,0 +1,227 @@
+﻿.head {
+    background: url('../Images/head_mobile.png') no-repeat center;
+    width: 320px;
+    height: 360px;
+    position: relative;
+}
+
+.formBG {
+    width: 320px;
+    height: 295px;
+    background-color: white;
+    margin-top: 8px;
+    position: relative;
+}
+
+.galleryBG {
+    position: relative;
+    width: 320px;
+    height: 308px;
+    background-color: #b9d9fd;
+    direction: ltr;
+}
+
+.galleryToolBar {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: url('../Images/gallery_top_mobile.png') no-repeat;
+}
+
+    .galleryToolBar a {
+        position: absolute;
+        right: 210px;
+        width: 58px;
+        height: 40px;
+        /*border: solid 1px red;*/
+    }
+
+.fileUploadWrapper {
+    width: 120px;
+    float: left;
+    overflow: auto;
+    text-align: center;
+}
+
+.fileUpload {
+    background-image: url('../Images/file_upload_mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 118px;
+    height: 164px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.fileButton {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.titleForm {
+    /*font-family: sans-serif;
+    font-size: 44px;*/
+    display: none;
+}
+
+.inputWrapper {
+    width: 100%;
+}
+
+.inputForm {
+    font-family: sans-serif;
+    font-size: 16px;
+    border: solid 1px #b8b8b8;
+    width: 170px;
+    height: 31px;
+    margin: 8px 2px 0 5px;
+    padding-right: 20px;
+    display: block;
+    background: white url('../Images/red_star.png') no-repeat right top;
+}
+
+.age {
+    width: 44px;
+    float: right;
+}
+
+.dress {
+    width: 223px;
+}
+
+.defaultInput {
+    color: #808080;
+}
+
+.tosWrap {
+    font-family: sans-serif;
+    width: 205px;
+    overflow: auto;
+    margin: 8px 0 auto;
+}
+
+.sendButton {
+    background-image: url('../Images/send_btn_mobile.png');
+    width: 302px;
+    height: 42px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.modaldialog {
+    position: absolute;
+    background-color: white;
+    color: maroon;
+    width: 220px;
+    min-height: 200px;
+    font-family: sans-serif;
+    text-align: center;
+    border: solid 2px maroon;
+    display: none;
+}
+
+.modalclose {
+    background: url('../Images/toolbar_sprite.png') no-repeat -150px -10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.thanks {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: orangered;
+    color: white;
+    display: none;
+}
+
+.thanksMessage {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+}
+
+.closeThanks {
+    width: 30px;
+    height: 30px;
+    background: url('../Images/toolbar_sprite.png') no-repeat -112px -57px;
+    cursor: pointer;
+}
+
+.carouselWrapper {
+    width: 320px;
+}
+
+.navigator {
+    display: none;
+}
+
+.appNote {
+    width: 70px;
+    font-family: sans-serif;
+    position: relative;
+    top: -70px;
+    font-size: 14px;
+    float: left;
+}
+
+.imageContainer {
+    position: absolute;
+    width: 318px;
+    height: 435px;
+    border: solid 1px #034da2;
+    resize: none;
+    display: none;
+}
+
+.toolBtn {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.FB {
+    background: url('../Images/toolbar_sprite.png') no-repeat;
+}
+
+.mail {
+    background: url('../Images/toolbar_sprite.png') no-repeat -45px 0;
+}
+
+.imageData {
+    float: right;
+}
+
+.sendMailDialog {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #034ea2;
+    border: solid 1px white;
+    padding: 5px;
+    display: none;
+}
+
+.closeMail {
+    background: url('../Images/toolbar_sprite.png') no-repeat -112px -60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sendMailStatus {
+    color: white;
+    margin-top: 10px;
+}
+
+.imageWrapper {
+    height: 187px;
+}

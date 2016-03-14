@@ -1,0 +1,95 @@
+﻿.head {
+    background: url('../Images/gallery_head_mobile.png') center no-repeat;
+    width: 320px;
+    height: 208px;
+    position: relative;
+}
+
+.galleryBG {
+    width: 320px;
+    height: 824px;
+    background-color: #b9dafd;
+    direction: ltr;
+}
+
+.imageContainer {
+    position: absolute;
+    width: 318px;
+    height: 435px;
+    border: solid 1px #034da2;
+    resize: none;
+    display: none;
+}
+
+.toolBtn {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.FB {
+    background: url('../Images/toolbar_sprite.png') no-repeat;
+}
+
+.mail {
+    background: url('../Images/toolbar_sprite.png') -45px 0 no-repeat;
+}
+
+.imageData {
+    float: right;
+}
+
+.displayGalleryHead {
+    width: 100%;
+    height: 45px;
+    background: url('../Images/gallery_toolbar_mobile.png') no-repeat right top;
+    position: relative;
+}
+
+    .displayGalleryHead a {
+        position: absolute;
+        width: 138px;
+        height: 40px;
+        left: 37px;
+        cursor: pointer;
+        /*border: solid 1px red;*/
+    }
+
+.owl-controls {
+    display: none !important;
+}
+
+
+.sendMailDialog {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #034ea2;
+    border: solid 1px white;
+    padding: 5px;
+    display: none;
+}
+
+.closeMail {
+    background: url('../Images/toolbar_sprite.png') -112px -60px no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sendMailStatus {
+    color: white;
+    margin-top: 10px;
+}
+
+.itemsWrapper {
+    width: 318px;
+    height: 775px;
+    overflow: auto;
+}
+
+.imageWrapper {
+    height: 130px;
+}

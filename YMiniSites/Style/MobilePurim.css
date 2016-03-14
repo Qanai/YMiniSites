@@ -1,0 +1,49 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 320px;
+    max-height: 1494px;
+    /*background-color: #fce091;*/
+    direction: rtl;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 320px;
+    height: 62px;
+    background-color: #ed1a38;
+    background: url('../Images/yed_footer_mobile.png') no-repeat center;
+}
+
+.getNewspaper {
+    width: 98px;
+    height: 33px;
+    float: left;
+    cursor: pointer;
+    /*border: solid 1px yellow;*/
+}
+
+.hidden {
+    display: none;
+}
+
+.galleryItem {
+    width: 190px;
+    overflow: hidden;
+    border: solid 1px #B9B7B8;
+    margin: 10px;
+    direction: rtl;
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+.red {
+    color: red;
+}

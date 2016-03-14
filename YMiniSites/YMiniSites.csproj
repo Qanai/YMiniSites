@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D173057-6E0C-4A97-BC0C-BC850C0F6913}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMiniSites</RootNamespace>
+    <AssemblyName>YMiniSites</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetascanHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MetascanHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="Images\file_upload.png" />
+    <Content Include="Images\file_upload_mobile.png" />
+    <Content Include="Images\gallery_head.png" />
+    <Content Include="Images\gallery_head_mobile.png" />
+    <Content Include="Images\gallery_next_big.png" />
+    <Content Include="Images\gallery_prev_big.png" />
+    <Content Include="Images\gallery_toolbar_mobile.png" />
+    <Content Include="Images\gallery_top.png" />
+    <Content Include="Images\gallery_top_mobile.png" />
+    <Content Include="Images\head.png" />
+    <Content Include="Images\head_mobile.png" />
+    <Content Include="Images\kfar_logo.png" />
+    <Content Include="Images\nav_next.png" />
+    <Content Include="Images\nav_prev.png" />
+    <Content Include="Images\red_star.png" />
+    <Content Include="Images\send_btn.png" />
+    <Content Include="Images\send_btn_mobile.png" />
+    <Content Include="Images\thanks.png" />
+    <Content Include="Images\toolbar_sprite.png" />
+    <Content Include="Images\yed_footer.png" />
+    <Content Include="Images\yed_footer_mobile.png" />
+    <Content Include="MobileDefault.aspx" />
+    <Content Include="MobileGallery.aspx" />
+    <Content Include="PurimFB.aspx" />
+    <Content Include="Scripts\AjaxHelper.js" />
+    <Content Include="Scripts\AppForm.js" />
+    <Content Include="Scripts\Gallery.js" />
+    <Content Include="Scripts\GalleryForm.js" />
+    <Content Include="Scripts\ModalDialog.js" />
+    <Content Include="Scripts\owl.carousel.js" />
+    <Content Include="Services\FileUploader.asmx" />
+    <Content Include="Services\MiniSiteWS.asmx" />
+    <Content Include="Style\AppForm.css" />
+    <Content Include="Style\Gallery.css" />
+    <Content Include="Style\GalleryForm.css" />
+    <Content Include="Style\MobileAppForm.css" />
+    <Content Include="Style\MobileGalleryForm.css" />
+    <Content Include="Style\MobilePurim.css" />
+    <Content Include="Style\owl.carousel.css" />
+    <Content Include="Style\owl.theme.css" />
+    <Content Include="Style\Purim.css" />
+    <Content Include="UC\AppForm.ascx" />
+    <Content Include="UC\Dialogs.ascx" />
+    <Content Include="UC\DispGalleryControl.ascx" />
+    <Content Include="UC\Footer.ascx" />
+    <Content Include="UC\AppGalleryControl.ascx" />
+    <Content Include="UC\GalleryFooter.ascx" />
+    <Content Include="UC\GalleryImage.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\SiteHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MobileDefault.aspx.cs">
+      <DependentUpon>MobileDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MobileDefault.aspx.designer.cs">
+      <DependentUpon>MobileDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MobileGallery.aspx.cs">
+      <DependentUpon>MobileGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MobileGallery.aspx.designer.cs">
+      <DependentUpon>MobileGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurimFB.aspx.cs">
+      <DependentUpon>PurimFB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurimFB.aspx.designer.cs">
+      <DependentUpon>PurimFB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\FileUploader.asmx.cs">
+      <DependentUpon>FileUploader.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\MiniSiteWS.asmx.cs">
+      <DependentUpon>MiniSiteWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UC\AppForm.ascx.cs">
+      <DependentUpon>AppForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\AppForm.ascx.designer.cs">
+      <DependentUpon>AppForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Dialogs.ascx.cs">
+      <DependentUpon>Dialogs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\Dialogs.ascx.designer.cs">
+      <DependentUpon>Dialogs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\DispGalleryControl.ascx.cs">
+      <DependentUpon>DispGalleryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\DispGalleryControl.ascx.designer.cs">
+      <DependentUpon>DispGalleryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\AppGalleryControl.ascx.cs">
+      <DependentUpon>AppGalleryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\AppGalleryControl.ascx.designer.cs">
+      <DependentUpon>AppGalleryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\GalleryFooter.ascx.cs">
+      <DependentUpon>GalleryFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\GalleryFooter.ascx.designer.cs">
+      <DependentUpon>GalleryFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\GalleryImage.ascx.cs">
+      <DependentUpon>GalleryImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\GalleryImage.ascx.designer.cs">
+      <DependentUpon>GalleryImage.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Documents\Takanon.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMiniSitesBL\YMiniSitesBL.csproj">
+      <Project>{3f5dd000-f957-4a7e-876e-5f174dfce981}</Project>
+      <Name>YMiniSitesBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49897</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://purim2016.yedioth.co.il</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

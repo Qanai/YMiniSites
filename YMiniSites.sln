@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMiniSites", "YMiniSites\YMiniSites.csproj", "{8D173057-6E0C-4A97-BC0C-BC850C0F6913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMiniSitesDAL", "YMiniSitesDAL\YMiniSitesDAL.csproj", "{744AC9A6-260A-4F29-A613-1A2B197DA8CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMiniSitesBL", "YMiniSitesBL\YMiniSitesBL.csproj", "{3F5DD000-F957-4A7E-876E-5F174DFCE981}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2013:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = YMiniSites\\YMiniSites.csproj
+		SccProjectName1 = YMiniSites
+		SccLocalPath1 = YMiniSites
+		SccProjectUniqueName2 = YMiniSitesBL\\YMiniSitesBL.csproj
+		SccProjectName2 = YMiniSitesBL
+		SccLocalPath2 = YMiniSitesBL
+		SccProjectUniqueName3 = YMiniSitesDAL\\YMiniSitesDAL.csproj
+		SccProjectName3 = YMiniSitesDAL
+		SccLocalPath3 = YMiniSitesDAL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D173057-6E0C-4A97-BC0C-BC850C0F6913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D173057-6E0C-4A97-BC0C-BC850C0F6913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D173057-6E0C-4A97-BC0C-BC850C0F6913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D173057-6E0C-4A97-BC0C-BC850C0F6913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744AC9A6-260A-4F29-A613-1A2B197DA8CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744AC9A6-260A-4F29-A613-1A2B197DA8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744AC9A6-260A-4F29-A613-1A2B197DA8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744AC9A6-260A-4F29-A613-1A2B197DA8CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5DD000-F957-4A7E-876E-5F174DFCE981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5DD000-F957-4A7E-876E-5F174DFCE981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5DD000-F957-4A7E-876E-5F174DFCE981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5DD000-F957-4A7E-876E-5F174DFCE981}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
