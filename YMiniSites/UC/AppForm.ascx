@@ -26,7 +26,7 @@
                 <span class="red">*</span>
                 <span>שדה חובה</span>
             </div>
-            <%--<input type="button" id="test" value="Send OK" />--%>
+            <%--<input type="button" id="test" value="OK" style="width: 20px; position: absolute; top: 215px; left: 90px;" />--%>
         </div>
         <div class="clear"></div>
     </div>

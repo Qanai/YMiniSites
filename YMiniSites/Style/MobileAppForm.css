@@ -131,27 +131,45 @@
 
 .thanks {
     position: absolute;
-    width: 300px;
-    height: 150px;
-    background-color: orangered;
-    color: white;
+    width: 320px;
+    height: 175px;
+    background: url('../Images/thanks_mobile.jpg') no-repeat;
     display: none;
 }
 
+.serviceButton {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    /*border: solid 1px yellow;*/
+}
+
+.shareFB {
+    position: absolute;
+    top: 136px;
+    left: 122px;
+}
+
+.sendMail {
+    position: absolute;
+    top: 136px;
+    left: 165px;
+}
+
 .thanksMessage {
-    font-family: sans-serif;
+    /*font-family: sans-serif;
     font-weight: bold;
     font-size: 23px;
     text-align: center;
     width: 200px;
-    margin: 30px auto;
+    margin: 30px auto;*/
+    display: none;
 }
 
 .closeThanks {
     width: 30px;
     height: 30px;
-    background: url('../Images/toolbar_sprite.png') no-repeat -112px -57px;
-    cursor: pointer;
+    background: url('../Images/toolbar_sprite.png') no-repeat -153px -57px;
 }
 
 .carouselWrapper {

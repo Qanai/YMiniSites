@@ -22,11 +22,33 @@
     <link href="Style/owl.theme.css" rel="stylesheet" />
     <link href="Style/Gallery.css" rel="stylesheet" />
     <title>התחפושת של המדינה</title>
-    <meta charset="utf-8" />  
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta property="fb:admins" content="1034354349" />
 </head>
 <body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KPG56G" 
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KPG56G');
+    </script>
+    <!-- End Google Tag Manager -->
     <form id="form1" runat="server">
         <div class="container">
             <div class="head pageItem">
@@ -42,28 +64,6 @@
         <script src="Scripts/ModalDialog.js"></script>
         <script src="Scripts/Gallery.js"></script>
         <script src="Scripts/AppForm.js"></script>
-        <!-- Google Tag Manager -->
-        <noscript>
-        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KPG56G" 
-            height="0" width="0" style="display:none;visibility:hidden">
-        </iframe>
-    </noscript>
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-KPG56G');
-        </script>
-        <!-- End Google Tag Manager -->
     </form>
 </body>
 </html>

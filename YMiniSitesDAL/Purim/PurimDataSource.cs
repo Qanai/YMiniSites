@@ -72,13 +72,14 @@ namespace YMiniSitesDAL.Purim
             return FindParticipantsData(query);
         }
         
-        public DataTable GetActiveParticipants(bool onlyHomePage = false)
+        //public DataTable GetActiveParticipants(bool onlyHomePage = false)
+        public DataTable GetActiveParticipants()
         {
             Dictionary<string, object> query = new Dictionary<string, object>() { { "Active", 1 } };
-            if (onlyHomePage)
-            {
-                query.Add("HomePage", 1);
-            }
+            //if (onlyHomePage)
+            //{
+            //    query.Add("HomePage", 1);
+            //}
             return FindParticipantsData(query);
         }
 

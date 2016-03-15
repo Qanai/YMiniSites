@@ -89,6 +89,7 @@
     <Content Include="Images\send_btn.png" />
     <Content Include="Images\send_btn_mobile.png" />
     <Content Include="Images\thanks.png" />
+    <Content Include="Images\thanks_mobile.jpg" />
     <Content Include="Images\toolbar_sprite.png" />
     <Content Include="Images\yed_footer.png" />
     <Content Include="Images\yed_footer_mobile.png" />

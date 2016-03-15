@@ -120,6 +120,7 @@ $(function () {
             'virtualPageURL': '/thank-you',
             'virtualPageTitle': 'טופס נשלח'
         });
+        $(".thanks .shareFB, .thanks .sendMail").data("id", result.contactId);
         ShowModal(".thanks", ".closeThanks");
         ClearInput();
     }

@@ -50,9 +50,10 @@ namespace YMiniSitesBL.Purim
             return CreateParticipants(dt).FirstOrDefault();
         }
 
-        public static IEnumerable<PurimParticipantData> FindActive(bool homePageOnly = false)
+        //public static IEnumerable<PurimParticipantData> FindActive(bool homePageOnly = false)
+        public static IEnumerable<PurimParticipantData> FindActive()
         {
-            DataTable dt = PurimDataSource.Instance.GetActiveParticipants(homePageOnly);
+            DataTable dt = PurimDataSource.Instance.GetActiveParticipants();
             return CreateParticipants(dt);
         }
 

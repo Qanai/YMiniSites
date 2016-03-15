@@ -23,27 +23,12 @@
     <meta property="fb:admins" content="1034354349" />
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="container">
-            <div class="head pageItem">
-            </div>
-            <uc1:AppForm ID="AppForm1" runat="server" />
-            <uc2:AppGalleryControl ID="AppGalleryControl1" runat="server" />
-            <uc3:Footer ID="Footer1" runat="server" />
-            <uc4:Dialogs ID="Dialogs1" runat="server" />
-            <uc5:GalleryImage ID="GalleryImage1" runat="server" />
-        </div>
-        <script src="Scripts/AjaxHelper.js"></script>
-        <script src="Scripts/ModalDialog.js"></script>
-        <script src="Scripts/Gallery.js"></script>
-        <script src="Scripts/AppForm.js"></script>
-        <!-- Google Tag Manager -->
-        <noscript>
+    <!-- Google Tag Manager -->
+    <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KPG56G" 
             height="0" width="0" style="display:none;visibility:hidden">
         </iframe>
     </noscript>
-    </form>
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -60,5 +45,20 @@
         })(window, document, 'script', 'dataLayer', 'GTM-KPG56G');
     </script>
     <!-- End Google Tag Manager -->
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="head pageItem">
+            </div>
+            <uc1:AppForm ID="AppForm1" runat="server" />
+            <uc2:AppGalleryControl ID="AppGalleryControl1" runat="server" />
+            <uc3:Footer ID="Footer1" runat="server" />
+            <uc4:Dialogs ID="Dialogs1" runat="server" />
+            <uc5:GalleryImage ID="GalleryImage1" runat="server" />
+        </div>
+        <script src="Scripts/AjaxHelper.js"></script>
+        <script src="Scripts/ModalDialog.js"></script>
+        <script src="Scripts/Gallery.js"></script>
+        <script src="Scripts/AppForm.js"></script>
+    </form>
 </body>
 </html>

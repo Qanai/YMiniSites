@@ -46,11 +46,12 @@ namespace YMiniSites.Purim2016.Services
         [WebMethod]
         public string GetAllParticipants(bool forHomePage)
         {
-            var participants = PurimParticipantData.FindActive(forHomePage);
+            var participants = PurimParticipantData.FindActive();
 
             if (forHomePage)
             {
-                participants = participants.OrderByDescending(p => p.UpdateDate).Take(5);
+                participants = participants.OrderByDescending(p => p.HomePage)
+                    .ThenByDescending(p => p.UpdateDate);
             }
 
             return JsonConvert.SerializeObject(participants);
