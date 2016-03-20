@@ -6,7 +6,7 @@
         </div>
         <div class="bigImageToolbar">
             <div id="btnFB" class="toolBtn FB"></div>
-            <div id="btnMail" class="toolBtn mail"></div>
+            <a id="btnMail" class="toolBtn mail"></a>
             <div class="imageData">
             </div>
             <div class="clear"></div>

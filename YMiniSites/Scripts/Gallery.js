@@ -29,6 +29,12 @@
     }
 
     var ShowPicture = function (jqDisplayContainer) {
+        var personId = jqDisplayContainer.data("id");
+        var title = "גם אני השתתפתי בתחרות התחפושת של המדינה";
+        var shareUrl = protocol + "//" + host + "/Gallery.aspx" + ((personId == "") ? "" : "%23" + personId);
+        var url = "mailto:?subject=" + title + "&body=" + shareUrl;
+        $('#btnMail').attr('href',url);
+			
         var dataContainer = $(settings.dataContainer);
         if (dataContainer.length > 0) {
             dataContainer.empty();
@@ -42,7 +48,7 @@
             "background-image": "url(" + imageSource + ")",
             "background-size": "100%"
         });
-
+        
         var shareData = {
             id: jqDisplayContainer.data("id"),
             src: jqDisplayContainer.data("src")
@@ -129,7 +135,7 @@
         if (mailBtn.length > 0) {
             var personId = mailBtn.data("id");
             var shareUrl = protocol + "//" + host + "/Gallery.aspx" + ((personId == "") ? "" : "#" + personId);
-
+			
             dataLayer.push({
                 'event': 'GA_Event',
                 'Category': 'Share',
@@ -137,11 +143,7 @@
                 'Label': shareUrl
             });
 
-            var title = "גם אני השתתפתי בתחרות התחפושת של המדינה";
-
-            var url = "mailto:?subject=" + title + "&body=" + shareUrl;
-            location.href = url;
-
+            
             //var shareUrl = SetImageSource(mailBtn.data("src"));
 
             //$("#btnSendEmail").off("click")
@@ -176,8 +178,16 @@
         }
 
         var CreateGalleryItem = function (participantData) {
-            var CreateToolButton = function (className) {
+            var CreateToolButton = function (className, isAnchor) {
                 var btn = $("<div></div>");
+				if (isAnchor){
+					btn = $("<a></a>");
+					var personId = participantData.Id;
+					var title = "גם אני השתתפתי בתחרות התחפושת של המדינה";
+					var shareUrl = protocol + "//" + host + "/Gallery.aspx" + ((personId == "") ? "" : "#" + personId);
+					var url = "mailto:?subject=" + title + "&body=" + shareUrl;
+					btn.attr('href', url);
+				}
                 btn.addClass("toolButton");
                 btn.addClass(className);
                 btn.attr("data-id", participantData.Id);
@@ -191,7 +201,7 @@
                 var toolbar = $("<div></div>");
                 toolbar.addClass("itemToolbar");
                 toolbar.append(CreateToolButton("shareFB"));
-                toolbar.append(CreateToolButton("shareMail"));
+                toolbar.append(CreateToolButton("shareMail", 1));
                 toolbar.append(CreateToolButton("showBig"));
 
                 return toolbar;

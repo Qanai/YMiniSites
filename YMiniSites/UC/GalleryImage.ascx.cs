@@ -10,7 +10,7 @@ namespace YMiniSites.Purim2016.UC
 {
     public partial class GalleryImage : System.Web.UI.UserControl
     {
-        protected void Page_Load(object sender, EventArgs e)
+		protected void Page_Load(object sender, EventArgs e)
         {
             //if (Request.Url.LocalPath.ToLower().Contains("mobile"))
             if (SiteHelper.MobileRequest())

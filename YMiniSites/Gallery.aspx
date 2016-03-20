@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Gallery.aspx.cs" Inherits="YMiniSites.Purim2016.Gallery" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Gallery.aspx.cs" Inherits="YMiniSites.Purim2016.Gallery" UICulture="he-IL" %>
 
 <%@ Register Src="UC/DispGalleryControl.ascx" TagName="DispGalleryControl" TagPrefix="uc1" %>
 <%@ Register Src="UC/GalleryFooter.ascx" TagName="GalleryFooter" TagPrefix="uc2" %>
